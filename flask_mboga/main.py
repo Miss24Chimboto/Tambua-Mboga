@@ -1,4 +1,5 @@
 from flask import Flask, render_template, url_for, flash
+from forms import RegistrstionForm, LoginForm
 
 
 app = Flask(__name__)
