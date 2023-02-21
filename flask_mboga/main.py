@@ -17,7 +17,7 @@ def recipe():
 
 @app.route("/nutritional_value")
 def nutritional_valuesource():
-    return render_template('nutrtional_value.html')
+    return render_template('nutritional_value.html')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
