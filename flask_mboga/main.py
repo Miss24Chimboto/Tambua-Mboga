@@ -1,23 +1,23 @@
-from flask import Flask
+from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route("/")
 @app.route("/home")
 def home():
-    return "<h1>Home Page</h1>"
+    return render_template('home.html')
 
 @app.route("/about")
 def about():
-    return "<h1>About Page</h1>"
+    return render_template('about.html')
 
 
-@app.route("/Recipe")
+@app.route("/recipe")
 def recipe():
-    return "<h1>Recipe</h1>"
+    return render_template('recipe.html')
 
-@app.route("/Nutritional Value")
+@app.route("/nutritional_value")
 def nutritional_valuesource():
-    return "<h1>Nutritional Value</h1>"
+    return render_template('nutrtional_value.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
