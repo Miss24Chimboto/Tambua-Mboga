@@ -21,7 +21,7 @@ def recipe():
 
 @app.route("/nutritional_value")
 def nutritional_valuesource():
-    return render_template('nutrtional_value.html')
+    return render_template('nutritional_value.html')
 
 @app.route("/register")
 def register():
