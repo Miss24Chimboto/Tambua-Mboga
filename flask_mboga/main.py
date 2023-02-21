@@ -26,7 +26,7 @@ def nutritional_valuesource():
 
 @app.route("/register")
 def register():
-    form = RegisterForm()
+    form = RegistrationForm()
     return render_template('register.html', form=form)
 
 @app.route("/login")
