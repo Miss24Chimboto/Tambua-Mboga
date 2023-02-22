@@ -13,26 +13,35 @@ def home():
 
 @app.route("/about")
 def about():
-    return render_template('about.html')
+    return render_template('about.html', title='About')
 
 
 @app.route("/recipe")
 def recipe():
-    return render_template('recipe.html')
+    return render_template('recipe.html', title='Recipe')
 
 @app.route("/nutritional_value")
 def nutritional_valuesource():
-    return render_template('nutritional_value.html')
+    return render_template('nutritional_value.html', title='Nutritional Value')
 
-@app.route("/register")
+@app.route("/register", methods=['GET', 'POST'])
 def register():
     form = RegistrationForm()
-    return render_template('register.html', form=form)
+    if form.validate_on_submit():
+        flash(f'Account created for {form.username.data}!', 'success')
+        return redirect(url_for('home'))
+    return render_template('register.html', form=form, title='Register')
 
-@app.route("/login")
+@app.route("/login", methods=['GET', 'POST'])
 def login():
         form = LoginForm()
-        return render_template('login.html', form=form)
+        if form.validate_on_submit():
+            if form.email.data == 'admin@blog.com' and form.password.data == 'password':
+                flash('You have been logged in!', 'success')
+                return redirect(url_for('home'))
+            else:
+                flash('Login Unsuccessful. Please check username and password', 'danger')
+        return render_template('login.html', form=form, title='Login')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
