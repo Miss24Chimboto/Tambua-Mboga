@@ -47,7 +47,7 @@ def login():
 def search():
     #query = request.GET.get('search')
     #req_search = Storage.query.filter_by(req_no=query)
-    return render_template('search.html', title='Search')
+    return render_template('home.html')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
