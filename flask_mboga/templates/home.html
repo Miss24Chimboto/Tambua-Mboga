@@ -1,6 +1,10 @@
 {% extends "main.html" %}
 {% block content %}
     {% for post in posts %}
+        <form class="form-inline my-2 my-lg-0" action="{{ url_for('search') }}">
+        <input class="form-control mr-sm-2" name="search" type="search" placeholder="Se>  
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</butt>
+        </form> 
         <article class="media content-section">
           <div class="media-body">
             <div class="article-metadata">
