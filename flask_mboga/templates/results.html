@@ -1,3 +1,4 @@
+{% extends 'main.html' %}
 <html>
 <head>
 <title>CSS Accordion using checkbox, label and div tags</title>
@@ -49,7 +50,7 @@
 	}
 	</style>
 </head>
-
+{% block header %}{% endblock %}
 <body>
 	<div id="myaccordion">
 	<input type="checkbox" id="accordion1" class="hidecontent"/>
