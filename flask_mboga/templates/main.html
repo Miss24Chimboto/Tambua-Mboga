@@ -39,6 +39,9 @@
     </header>
     <main role="main" class="container">
       <div class="row">
+	  {% if active_page == "home" %}
+	  <a class="nav-item nav-link" href="{{ url_for('home') }}">Home</a>
+          {% endif %}
           {% block content %}{% endblock %}
         </div>
        </div>
