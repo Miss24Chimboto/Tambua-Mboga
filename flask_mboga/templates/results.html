@@ -1,6 +1,7 @@
 {% extends 'main.html' %}
 <html>
 <head>
+{% block header %}{% endblock %}
 <title>CSS Accordion using checkbox, label and div tags</title>
 	<style>
 	.hidecontent {
@@ -50,7 +51,7 @@
 	}
 	</style>
 </head>
-{% block header %}{% endblock %}
+
 <body>
 	<div id="myaccordion">
 	<input type="checkbox" id="accordion1" class="hidecontent"/>
