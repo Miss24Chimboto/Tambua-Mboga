@@ -37,6 +37,52 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 20px;
 }
 
+/* Style the buttons that are used to open and close the accordion panel */
+#myaccordion label {
+		box-shadow:0 0 20px #d4d4d4;
+		display: block;    
+		padding: 8px 22px;
+		margin: 20px 0px 1px 0px;
+		cursor: pointer;
+		background: #5f75a4;
+		color: #FFF;
+		transition: ease .5s;
+	}
+	#myaccordion label:hover {
+		background: #5f75ff;
+	}
+/*Accordion content */
+.content {
+		box-shadow:0 0 20px #d4d4d4;
+		background: #ffff;
+		padding: 10px 25px;
+		border: 1px solid #d4d4d4;
+		margin: -1 0 0 0;
+	}
+
+/*CSS animation for accordion */
+#myaccordion input:checked + label + .content {
+		display: block;
+		webkit-animation: fadeIn 0.5s ease-out;
+		-moz-animation: fadeIn 0.5s ease-out;
+		-o-animation: fadeIn 0.5s ease-out;
+		animation: fadeIn 0.5s ease-out;
+	}
+	@-webkit-keyframes fadeIn {
+		0% {
+			display: none;
+			opacity: 0;
+		}
+		1% {
+			display: block;
+			opacity: 0;
+		}
+		100% {
+			display: block;
+			opacity: 1;
+		}
+	}
+
 .article-title {
   color: #444444;
 }

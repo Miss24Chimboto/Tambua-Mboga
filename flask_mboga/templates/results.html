@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>CSS Accordion using checkbox, label and div tags</title>
+	<style>
+	.hidecontent {
+    	display: none;
+	}
+	
+	#myaccordion label {
+		box-shadow:0 0 20px #d4d4d4;
+		display: block;    
+		padding: 8px 22px;
+		margin: 20px 0px 1px 0px;
+		cursor: pointer;
+		background: #5f75a4;
+		color: #FFF;
+		transition: ease .5s;
+	}
+	#myaccordion label:hover {
+		background: #5f75ff;
+	}
+	.content {
+		box-shadow:0 0 20px #d4d4d4;
+		background: #ffff;
+		padding: 10px 25px;
+		border: 1px solid #d4d4d4;
+		margin: -1 0 0 0;
+	}
+	#myaccordion input:checked + label + .content {
+		display: block;
+		webkit-animation: fadeIn 0.5s ease-out;
+		-moz-animation: fadeIn 0.5s ease-out;
+		-o-animation: fadeIn 0.5s ease-out;
+		animation: fadeIn 0.5s ease-out;
+	}
+	@-webkit-keyframes fadeIn {
+		0% {
+			display: none;
+			opacity: 0;
+		}
+		1% {
+			display: block;
+			opacity: 0;
+		}
+		100% {
+			display: block;
+			opacity: 1;
+		}
+	}
+	</style>
+</head>
+
+<body>
+	<div id="myaccordion">
+	<input type="checkbox" id="accordion1" class="hidecontent"/>
+	<label for="accordion1">Accordion One Heading</label>
+	<div class="content hidecontent">
+		<p>Content for first Accordion.</p>
+		<p>Content for first Accordion.</p>
+	</div>
+	<input type="checkbox" id="accordion2" class="hidecontent"/>
+	<label for="accordion2">Accordion Two Heading</label>
+	<div class="content hidecontent">
+		<p>Content for Second Accordion.</p>
+		<p>Content for Second Accordion.</p>
+	</div>
+	<input type="checkbox" id="accordion3" class="hidecontent"/>
+	<label for="accordion3">Accordion Three Heading</label>
+	<div class="content hidecontent">
+		<p>Content for third Accordion.</p>
+		<p>Content for third Accordion.</p>
+	</div>
+	</div>
+</body>
+</html>

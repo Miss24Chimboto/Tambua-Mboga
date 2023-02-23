@@ -15,7 +15,6 @@ def home():
 def about():
     return render_template('about.html', title='About')
 
-
 @app.route("/recipe")
 def recipe():
     return render_template('recipe.html', title='Recipe')
@@ -48,6 +47,10 @@ def search():
     #query = request.GET.get('search')
     #req_search = Storage.query.filter_by(req_no=query)
     return render_template('home.html')
+
+@app.route("/results")
+def results():
+    return render_template('results.html', title='Search results')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
