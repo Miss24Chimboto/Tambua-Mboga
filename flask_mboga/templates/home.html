@@ -1,7 +1,4 @@
 {% extends "main.html" %}
-<div class= img-fluid>        
-        <img src="{{url_for('static', filename='veg.jpg')}}" class="img-fluid" alt="Responsive image">
-      </div> 
 {% block content %}
         <form class="form-inline my-2 my-lg-0" action="{{ url_for('search') }}">
         <input class="form-control mr-sm-2" name="search" type="search" placeholder="Search">        
