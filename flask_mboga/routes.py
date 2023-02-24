@@ -1,9 +1,7 @@
-from flask import Flask, render_template, url_for, flash
-from forms import RegistrationForm, LoginForm
-
-
-app = Flask(__name__)
-app.config['SECRET_KEY'] = '611e204927d4e611f723b1935726c350a1c05ade'
+from flask import render_template, url_for, flash, redirect
+from flask_mboga import app
+from flask_mboga.forms import RegistrationForm, LoginForm
+from flask_mboga.models import User, Vegetable, Recipe, NutritionalValue
 
 
 @app.route("/")
@@ -48,6 +46,12 @@ def search():
     #query = request.GET.get('search')
     #req_search = Storage.query.filter_by(req_no=query)
     return render_template('home.html')
+"""
+@app.route("/recipe")
+def recipe():
+    return render_template('recipe.html')
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
+@app.route("/nutritional_value")
+def nutrtion():
+    return render_template('nutritional_value.html')
+    """
