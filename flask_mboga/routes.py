@@ -49,11 +49,11 @@ def search():
 @app.route("/recipe")
 def recipe():
     return render_template('recipe.html')
-
+"""
 @app.route("/results")
 def results():
     return render_template('results.html', title='Search results')
-
+"""
 @app.route("/nutritional_value")
 def nutrtion():
     return render_template('nutritional_value.html')
