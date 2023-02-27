@@ -16,7 +16,7 @@ class Vegetable(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100), nullable=False)
     recipe = db.relationship('Recipe', backref='recipes')
-    nutrion = db.relationship('NutritionalValue', backref='nutrients')
+    nutrition = db.relationship('NutritionalValue', backref='nutrient')
 
     def __repr__(self):
         return f"Vegetable('{self.name}')"
