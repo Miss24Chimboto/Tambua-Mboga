@@ -44,7 +44,7 @@ def login():
 def search():
     #query = request.GET.get('search')
     #req_search = Storage.query.filter_by(req_no=query)
-    return render_template('recipe.html')
+    return render_template('results.html')
 
 @app.route("/results")
 def results():
@@ -56,9 +56,6 @@ def results():
 def recipe():
     return render_template('recipe.html')
 """
-@app.route("/results")
-def results():
-    return render_template('results.html', title='Search results')
 """
 @app.route("/nutritional_value")
 def nutrtion():
