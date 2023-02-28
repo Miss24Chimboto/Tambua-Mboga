@@ -1,8 +1,6 @@
 {% extends "main.html" %}
+background-image: url{{url_for('static', filename='veg.jpg')}}
 {% block content %}
-        <div class= img-fluid>        
-        <img src="{{url_for('static', filename='veg.jpg')}}" class="img-fluid" alt="Responsive image">
-        </div>         
     {% for post in posts %}
         <article class="media content-section">
           <div class="media-body">
