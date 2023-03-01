@@ -42,26 +42,17 @@
         </div>
       </nav>
     </header>
-    <main role="main" class="container">
+      <main role="main" class="container">
       <div class="row">
          <div class="col-md-8">
-<!--         {% with messages = get_flashed_messages(with_categories=true) %}
-            {% if messages %}
-              {% for category, message in messages %}
-                <div class="alert alert-{{ category }}">
-                  {{ message }}
                 </div>
-              {% endfor %}
-            {% endif %}
-          {% endwith %} -->
 	  {% if active_page == "home" %}
          	  <a class="nav-item nav-link" href="{{ url_for('home') }}">Home</a> 
             {% endif %} 
-            {% block content %}{% endblock %}
-       <div class="col-md-4">
+     <!--       {% block content %}{% endblock %}
+        <div class="col-md-4">
          <div class="content-section">
            <h3>Find more here</h3>
-           <p class='text-muted'>Find more things here.
              <ul class="list-group">
                 <li class="list-group-item list-group-item-light">Fruits</li>
                 <li class="list-group-item list-group-item-light">Vegetables</li>
@@ -71,7 +62,7 @@
              </ul>
            </p>
          </div>
-         </div> 
+         </div> -->
         </div>
        </div>
     </main>

@@ -4,20 +4,25 @@
 </head>
 {% block content %}
 background-image: url({{ url_for('static', filename='recipe1.jpg') }})
-<!-- {% set active_page = "home" %} -->
+{% set active_page = "home" %}
 <body>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<body>
 
- <div class="w3-container">
-   <h2>Find interesting recipes in the cards below</h2>
+
+                <div class="recipe_card1">
+  <!-- <p>Find interesting recipes in the cards below</p>
       <div class="w3-card-4" style="width:50%;">
           <header class="w3-container w3-green">
                 <h1>Garlic Spinach Salmon</h1>
-                    </header>
-
-                        <div class="w3-container">
+                    </header> -->
+			<div class="bg-image hover-overlay ripple" data-mdb-ripple-colour="light">
+ 			 <img src="https://unsplash.com/photos/gwBcamFtPr4" class="img-fluid"/>
+ 			 <a href="#!">
+ 			   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+ 		         </a>
+			</div>
+                        <div class="recipe_card1">
                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                   </div>
 
@@ -26,7 +31,20 @@ background-image: url({{ url_for('static', filename='recipe1.jpg') }})
                                                 </footer>
                                                   </div>
                                                   </div>
-
-                                                  </body>
-</body>
+		  <div class="recipe_card2">
+   			 <div class="bg-image hover-overlay ripple" data-mdb-ripple-colour="light">
+ 	                         <img src="https://unsplash.com/photos/gwBcamFtPr4" class="img-fluid"/>
+                                 <a href="#!">
+                        </div>        
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                         </a>
+		</div>
+		<div class="recipe_card2">
+		      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+		
+                         <footer class="w3-container w3-green">
+		             <p><a href="https://www.w3schools.com/">Click to view the recipe</a></p>
+                         </footer>
 {% endblock content %}
+</body>		                              

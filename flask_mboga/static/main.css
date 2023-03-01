@@ -36,7 +36,16 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 3px;
   margin-bottom: 20px;
 }
+/*Styling for my recipe classes- recipe_card1 */
+.recipe_card1 {
+  margin-top: 10px;
+}
 
+/*Styling for my recipe classes- recipe_card2 */
+.recipe_card2 {
+  margin-bottom: 10px;
+  }
+  
 /* Style the buttons that are used to open and close the accordion panel */
 #myaccordion label {
 		box-shadow:0 0 20px #d4d4d4;
