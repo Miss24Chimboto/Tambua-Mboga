@@ -3,48 +3,78 @@
     <title>Recipe</title>
 </head>
 {% block content %}
-background-image: url({{ url_for('static', filename='recipe1.jpg') }})
-{% set active_page = "home" %}
+<h3>Recipes</h3>
+  <p>Find amazing recipes on this page</p>
 <body>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<div class="recipe_card1">
+<header class="w3-container w3-green">
+  <h1>Garlic Spinach and Salmon</h1>
+    <div class="w3-card-4">
+</header>
+      <div class="image1">
+        <img src="{{ url_for('static', filename='recipe_card1.jpg')}}", width="500", height="600">
 
+<div class="w3-container">
+  <p>Some text.. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
 
-                <div class="recipe_card1">
-  <!-- <p>Find interesting recipes in the cards below</p>
-      <div class="w3-card-4" style="width:50%;">
-          <header class="w3-container w3-green">
-                <h1>Garlic Spinach Salmon</h1>
-                    </header> -->
-			<div class="bg-image hover-overlay ripple" data-mdb-ripple-colour="light">
- 			 <img src="https://unsplash.com/photos/gwBcamFtPr4" class="img-fluid"/>
- 			 <a href="#!">
- 			   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
- 		         </a>
-			</div>
-                        <div class="recipe_card1">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                  </div>
+<div class="footer">   
+<footer class="w3-container w3-green">
+     <a href="https://www.bbcgoodfood.com/recipes/creamy-garlic-lemon-spinach-salmon" Click for more</a>
+</footer>
+</div>
 
-                                      <footer class="w3-container w3-green">
-                                            <p><a href="https://www.w3schools.com/">Click to view the recipe</a></p>
-                                                </footer>
-                                                  </div>
-                                                  </div>
-		  <div class="recipe_card2">
-   			 <div class="bg-image hover-overlay ripple" data-mdb-ripple-colour="light">
- 	                         <img src="https://unsplash.com/photos/gwBcamFtPr4" class="img-fluid"/>
-                                 <a href="#!">
-                        </div>        
-                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                         </a>
-		</div>
-		<div class="recipe_card2">
-		      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-		</div>
-		
-                         <footer class="w3-container w3-green">
-		             <p><a href="https://www.w3schools.com/">Click to view the recipe</a></p>
-                         </footer>
+    <div class="recipe_card2">
+    <header class="w3-container w3-green">
+      <h1>Mashed potatoes, bacon and sukuma wiki</h1>
+        <div class="w3-card-4">
+          <img src="{{ url_for('static', filename='recipe_card2.jpg')}}", width="500", height="600">
+        </div>
+    </header>
+
+    <div class="w3-container">
+      <p>Some text.. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat></div>
+
+     <footer class="w3-container w3-green"
+         <h5>Click for more</h5>
+           <a href="https://www.bbcgoodfood.com/recipes/creamy-garlic-lemon-spinach-salmon" Click for more</a>
+     </footer>
+    </div>
+    </div>
+
+    <div class="recipe_card3">
+    <header class="w3-container w3-green">
+      <h1>Egg, Managu,Avocado and Fig</h1>
+        <div class="w3-card-4">
+          <img src="{{ url_for('static', filename='recipe3.jpg')}}", width="600", height="400">
+        </div>
+    </header>
+
+    <div class="w3-container">
+      <p>Some text.. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat></div>
+     
+    <footer2 class="w3-container w3-green">
+      <h5>Click for more</h5>
+        <a href="https://www.bbcgoodfood.com/recipes/creamy-garlic-lemon-spinach-salmon" Click for more</a>
+    </footer2>
+    </div>
+    </div>
+<div class="recipe_card4">
+    <header class="w3-container w3-green">
+      <h1>Kale and Chick pea salad</h1>
+        <div class="w3-card-4">
+          <img src="{{ url_for('static', filename='recipe2.jpg')}}", width="500", height="600">
+        </div>
+    </header>
+
+    <div class="w3-container">
+      <p>Some text.. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat></div>
+    
+    <footer3 class="w3-container w3-green">
+      <h5>Click for more</h5>
+        <a href="https://www.bbcgoodfood.com/recipes/creamy-garlic-lemon-spinach-salmon" Click for more</a>
+    </footer3>
+</div>
+</div>
+</body>
 {% endblock content %}
-</body>		                              

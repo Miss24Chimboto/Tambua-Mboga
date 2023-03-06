@@ -13,6 +13,10 @@ def home():
 def about():
     return render_template('about.html', title='About')
 
+@app.route("/index")
+def index():
+    return render_template('index.html', title='Index')
+
 @app.route("/recipe")
 def recipe():
     return render_template('recipe.html', title='Recipe')
