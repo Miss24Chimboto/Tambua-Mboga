@@ -2,35 +2,29 @@
 <header></header>
 {% block hero_element %}
 <div class=container>
-   <div class="hero-image">
-      <img src="static/veg.jpg" class="img-fluid" alt="test", width="1000px" height="800px" />
+      <img src="static/veg_banner.jpg" class="img-fluid" alt="test", width="1000px" height="800px" />
     <div>
-     <h3 class="text-center font-weight-bold">Who is Tambua-Mboga?</h3> 
-       <p class="text-center"> Know your vegetables and eat better!</p>
-     </div>
+     <h3 class="text-center font-weight-bold">Know your vegetables and eat better!</h3> 
    </div>
 </div>
 {% endblock hero_element %}
 <body>
 {% block content %}
 <div class=container>
-    <div class="bg-success text-white">
 <style>
 fieldset{
           bg-success;
-          background-repeat:no-repeat;
           background-position:center;
+          background-repeat:no-repeat;
           background-size:cover;
 }
 p#innerPara{padding:20px ;}       
 legend{width:200px;padding:10px 20px;}
 </style>
  
- <div class='container'>
-   <div class="col-lg-6">
+   <div class="col-lg-11">
      <fieldset class="border"> 
-       <legend class ='text-center'>About Us</legend>
-
+       <legend class ='text-center'>About us</legend>
 
          <p id="innerPara">
 The link between poor diet and diseases has been demonstrated to be significant; therefore, people are being encouraged to eat healthy foods, especially vegetables. However, not many know all the vegetables, how to prepare and cook them, and what nutritional value they hold. This is where Tambua Mboga comes in. It provides the names of the vegetables, various recipes, their nutritional value, and also how they can be grown and nurtured. This removes the stress from individuals trying to be healthy but who don’t know where to begin.
@@ -41,4 +35,4 @@ The link between poor diet and diseases has been demonstrated to be significant;
 
 </body>
 {% endblock content %}
-{% block footer %} {% endblock footer %}
+{% block footer %}{% endblock footer %}
