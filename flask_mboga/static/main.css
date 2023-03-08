@@ -70,6 +70,15 @@ position: relative;
 margin-bottom: 50px;
 }
 
+.description{
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+flex-direction: row;
+text-align: center;
+color: #cbd5db;
+}
+
 .banner_about h1 {
 position: absolute;
 top: 50%;
