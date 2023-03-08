@@ -17,8 +17,8 @@
 </header>
 
 <!--The image div for the first recipe -->
-<div class="image1">
-<img src="{{ url_for('static', filename='recipe_card1.jpg')}}", width="500", height="600">
+<div class="image_recipe">
+  <img src="{{ url_for('static', filename='recipe_card1.jpg')}}", width="500", height="600">
 </div>
 
 <!--The text div for the first recipe -->
@@ -39,6 +39,7 @@ nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p
 </div>
 
 <!--The card for the second recipe -->
+<div class="container">
 <div class="recipe_card2">
 <header class="w3-container w3-green">
 <h1>Mashed potatoes, bacon and sukuma wiki</h1>
@@ -46,7 +47,7 @@ nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p
 </header>
 
 <!--The image div for the second recipe -->
-<div class="image2"> 
+<div class="image_recipe"> 
   <img src="{{ url_for('static', filename='recipe_card2.jpg')}}", width="500", height="600">
 </div>
 
@@ -68,13 +69,14 @@ exercitat</p>
 </div>
 
 <!--The card for the third recipe -->
+<div class="container">
 <div class="recipe_card3">
 <header class="w3-container w3-green">
 <h1>Egg, Managu,Avocado and Fig</h1>
 </header>
 
 <!--The image div for the third recipe -->
-<div class="w3-card-4">
+<div class="image_recipe">
   <img src="{{ url_for('static', filename='recipe3.jpg')}}", width="600", height="400">
 </div>
 
@@ -95,25 +97,32 @@ exercitat</p>
 </div>
 </div>
 
+<div class="container">
 <div class="recipe_card4">
 <header class="w3-container w3-green">
 <h1>Kale and Chick pea salad</h1>
-<div class="w3-card-4">
+</header>
+
+<!--The image div for the fourth recipe -->
+<div class="image_recipe">
   <img src="{{ url_for('static', filename='recipe2.jpg')}}", width="500", height="600">
 </div>
 </header>
 
+<!--The text div for the fourth recipe -->
 <div class="w3-container">
 <p>Some text.. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
 exercitat></div>
 
+<!--The footer for the third recipe -->
+<div class="footer">
 <footer3 class="w3-container w3-green">
-<h5>Click for more</h5>
-<a href="https://www.bbcgoodfood.com/recipes/creamy-garlic-lemon-spinach-salmon" Click for more</a>
-</footer3>
+   <a href="https://www.bbcgoodfood.com/recipes/creamy-garlic-lemon-spinach-salmon" Click for more</a>
+</footer>
 </div>
 </div>
 </div>
-</body>
 {% endblock content %}
+{% block footer endblock footer %}
+</body>
