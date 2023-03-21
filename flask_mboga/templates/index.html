@@ -2,12 +2,13 @@
 <header></header>
 {% block hero_element %}
 <div class=container>
-      <img src="static/veg_banner.jpg" class="img-fluid" alt="test", width="1000px" height="800px" />
+      <img src="static/veg_banner.jpg" class="img-fluid" alt="test", width="1500px" height="800px" />
     <div>
      <h3 class="text-center font-weight-bold">Know your vegetables and eat better!</h3> 
    </div>
 </div>
 {% endblock hero_element %}
+</br>
 <body>
 {% block content %}
 <!-- The about section -->
@@ -17,22 +18,33 @@ fieldset{
           background-position:center;
           background-repeat:no-repeat;
           background-size:cover;
+	
 }
-p#innerPara{padding:20px ;}       
+p#innerPara{padding:20px font;}       
 legend{width:200px;padding:10px 20px;}
 </style>
  
-   <div class="col-lg-11">
+   <div class="col-lg-13">
      <fieldset class="border"> 
        <legend class ='text-center'>About us</legend>
 
-         <p id="innerPara">
-The link between poor diet and diseases has been demonstrated to be significant; therefore, people are being encouraged to eat healthy foods, especially vegetables. However, not many know all the vegetables, how to prepare and cook them, and what nutritional value they hold. This is where Tambua Mboga comes in. It provides the names of the vegetables, various recipes, their nutritional value, and also how they can be grown and nurtured. This removes the stress from individuals trying to be healthy but who don’t know where to begin.
-       </p>
- </fieldset>
+        <p id="innerPara">
+	The link between poor diet and diseases has 
+	been demonstrated to be significant therefore, 
+	people are being encouraged to eat healthy foods, 
+	especially vegetables. However, not many know 
+	all the vegetables, how to prepare and cook them, 
+	and what nutritional value they hold. This is where 
+	Tambua Mboga comes in. It provides the names of the 
+	vegetables, various recipes, their nutritional value, 
+	and also how they can be grown and nurtured. This removes 
+	the stress from individuals trying to be healthy but 
+	who don’t know where to begin.
+	</p>
+     </fieldset>
  </div>  
 </div>
-
+</br>
 <!--The page description under index -->
 <div class=container>
 <div class="description">
@@ -61,6 +73,7 @@ The link between poor diet and diseases has been demonstrated to be significant;
        </div>
 </div>
 </div>
+</br>
 {% endblock content %}
 {% block footer %}{% endblock footer %}
 </body>
